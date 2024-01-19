@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Name :"
+        app:layout_constraintBottom_toBottomOf="@id/nameEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nameEdit" />
+
+    <TextView
+        android:id="@+id/klsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Class :"
+        app:layout_constraintBottom_toBottomOf="@+id/klsEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/klsEdit" />
+
+    <TextView
+        android:id="@+id/nisView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Nis :"
+        app:layout_constraintBottom_toBottomOf="@+id/nisEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nisEdit" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/nameView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/klsEdit"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/klsView"
+        app:layout_constraintBottom_toBottomOf="@id/nameEdit"
+        app:layout_constraintTop_toTopOf="@id/nisEdit">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/nisEdit"
+        android:layout_width="267dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/nisView"
+        app:layout_constraintTop_toBottomOf="@id/klsEdit">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nisEdit">
+
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
